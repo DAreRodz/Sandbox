@@ -34,4 +34,4 @@ if (true) {
 }
 ```
 
-An __awesome__ [web] (http://www.asdf.com)
+An __awesome__ [web](http://www.asdf.com).
