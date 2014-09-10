@@ -3,12 +3,11 @@ Sandbox
 
 Another just-for-fun simple repository.
 
-Description
------------
+#### Description
 
 What do you think is a sandbox? ;P
 
-### Simple list ###
+### Simple list
 * First
 * Second
 * Third
@@ -20,16 +19,19 @@ asdfasdf
 
 > Second paragraph.
 
+### Ordered list
 1. First (again)
-1.1. does this work?
+    1. Subelement
 2. Second (once again)
 3. Third (really??)
 
 Code of block (_dyslexia_):
 
-    var dyslexia; 
-    if (true) { 
-        console.log("QWERTY"); 
-    }
+```javascript
+var dyslexia; 
+if (true) { 
+    console.log("QWERTY"); 
+}
+```
 
 An __awesome__ [web] (http://www.asdf.com)
