@@ -32,5 +32,5 @@
 /* Cherry Font */
 @font-face {
     font-family: 'CherryPIE';
-    src: url('/fonts/CherryPIE-R.ttf');
+    src: url('../fonts/CherryPIE-R.ttf');
 }
