@@ -1,0 +1,36 @@
+.paragraph {
+	font-family: 'CherryPIE';
+}
+
+.character {
+	background-color: #428bca;
+	color: white;
+
+	-webkit-animation-name: plink;
+    -webkit-animation-duration: 1s;
+	-webkit-animation-iteration-count: infinite;
+
+	animation-name: plink;
+    animation-duration: 1s;
+	animation-iteration-count: infinite;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes plink {
+	0% {background-color: #428bca; color: white}
+	50% {background-color: white; color: black}
+	100% {background-color: #428bca; color: white}
+}
+
+/* Standard syntax */
+@keyframes plink {
+	0% {background-color: #428bca; color: white}
+	50% {background-color: white; color: black}
+	100% {background-color: #428bca; color: white}
+}
+
+/* Cherry Font */
+@font-face {
+    font-family: 'CherryPIE';
+    src: url('/fonts/CherryPIE-R.ttf');
+}

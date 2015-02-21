@@ -1,64 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width,initial-scale=1">
-		<!-- jQuery library -->
-		<script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
-		<!-- Latest compiled and minified CSS -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-		<!-- Optional theme -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-		<!-- Latest compiled and minified JavaScript -->
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-		<!-- PIE library -->
-		<script src="js/lib/english_to_pie_i.js"></script>
-	</head>
-  <body>
-    <h1>PIE Quiz!</h1>
-    <div>
-				<p>Learning pronunciation with Phonetically Intuitive English.</p><br>
-				<div>
-					<span>General Marks:</span>
-					<input type="button" value="· / -">
-					<input type="button" value="º">
+<head>
+	<title>PIE Quiz!</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+	<!-- Custom theme -->
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+	<div class="container-fluid">
+
+		<div class="row">
+
+			<!-- First column: Title and main content-->
+			<div class="col-xs-12 col-sm-6">
+
+				<div class="panel panel-primary">
+					<div class="panel-heading">PIE Quiz!</div>
+					<div class="panel-body">
+						<div class="progress">
+							<div class="progress-bar progress-bar-success" role="progressbar" style="width:80%">
+								Correct (<span id="correct">8</span>)
+							</div>
+							<div class="progress-bar progress-bar-danger" role="progressbar" style="width:20%">
+								Wrong (<span id="wrong">2</span>)
+							</div>
+						</div>
+						<div class="panel panel-primary">
+							<p class="lead paragraph" id="text">
+								T͈ħè Skạ̄tèr is̩ àn óíl pạ̄intin̩ǥ on c̩ạnvàs c̩òmplẹ̄tèd bȳ t͈ħē Àmẹrìc̩àn
+								ạ̈rtìst Gịlbèrt Stụ̈àrt in 1782, wħīlė hē wàs̩ lịvin̩ǥ in Lộndòn.
+							</p>
+						</div>
+					</div>
+					<div class="panel-footer text-center">
+						<div class="btn-group">
+							<button id="prev" type="button" class="btn btn-default">
+								<span class="glyphicon glyphicon-step-backward"></span>
+							</button>
+							<button type="button" class="btn btn-primary">GO!</button>
+							<button id="next" type="button" class="btn btn-default">
+								<span class="glyphicon glyphicon-step-forward"></span>
+							</button>
+						</div>
+					</div>
 				</div>
-				<div>
-					<span>Vowel Marks:</span>
-					<input type="button" value="/">
-					<input type="button" value="c">
-					<input type="button" value="ɪ">
-					<input type="button" value="ɔ">
-					<input type="button" value="ʌ">
-					<input type="button" value="ᴗ">
-					<input type="button" value="-">
-					<input type="button" value="¨">
-					<input type="button" value="/+/">
-					<input type="button" value="\\">
-					<input type="button" value="//">
-					<input type="button" value="||">
-					<input type="button" value="\">
-					<input type="button" value="r̈">
+
+			</div>
+
+			<!-- Second column: Diacritics-->
+			<div class="col-xs-12 col-sm-6">
+
+				<div class="panel panel-primary">
+					<div class="panel-heading">Diacritics</div>
+					<div class="panel-body">
+						<div class="row">
+							<div class="col-xs-2">
+								<span>Vowel Marks:</span>
+							</div>
+							<div class="col-xs-10">
+								<div class="btn-group">
+								<input type="button" class="btn btn-default" value="/">
+								<input type="button" class="btn btn-default" value="c">
+								<input type="button" class="btn btn-default" value="ɪ">
+								<input type="button" class="btn btn-default" value="ɔ">
+								<input type="button" class="btn btn-default" value="ʌ">
+								<input type="button" class="btn btn-default" value="ᴗ">
+								<input type="button" class="btn btn-default" value="-">
+								<input type="button" class="btn btn-default" value="¨">
+								<input type="button" class="btn btn-default" value="/+/">
+								<input type="button" class="btn btn-default" value="\\">
+								<input type="button" class="btn btn-default" value="//">
+								<input type="button" class="btn btn-default" value="||">
+								<input type="button" class="btn btn-default" value="\">
+								<input type="button" class="btn btn-default" value="r̈">
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-2">
+								<span>Consonat Marks:</span>
+							</div>
+							<div class="col-xs-5">
+								<div class="btn-group">
+								<input type="button" class="btn btn-default" value="|">
+								<input type="button" class="btn btn-default" value="||">
+								<input type="button" class="btn btn-default" value="c">
+								<input type="button" class="btn btn-default" value="ɔ">
+								<input type="button" class="btn btn-default" value="-">
+								<input type="button" class="btn btn-default" value="u͈">
+								</div>
+							</div>
+							<div class="col-xs-2">
+								<span>Stress Mark:</span>
+							</div>
+							<div class="col-xs-3">
+								<div class="btn-group">
+								<input type="button" class="btn btn-default" value=".">
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
-				<div>
-					<span>Consonat Marks:</span>
-					<input type="button" value="|">
-					<input type="button" value="||">
-					<input type="button" value="c">
-					<input type="button" value="ɔ">
-					<input type="button" value="-">
-					<input type="button" value="u͈">
+
 			</div>
-			<div>
-					<span>Stress Mark:</span>
-					<input type="button" value=".">
-			</div>
-			<input id="textbox" type="text">
-			<input id="submit" type="button" value="Submit">
+
 		</div>
 
-		<!-- main script -->
-		<script src="js/script.js"></script>
+	</div>
 
-	</body>
+
+	<!-- jQuery library -->
+	<script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
 </html>
